@@ -81,3 +81,20 @@ demanding and complex engineering and
 organisational tasks in certain narrow areas and 
 independently solve specific well-defined tasks in
 computer and information science
+## Intended learning outcomes
+### Knowledge and understanding
+Comprehensive knowledge of databases and database
+management systems, underlying principles, and their
+exploitation.
+## Application
+Efficient use of various database tools and query
+language SQL.
+### Reflection
+Introduction and comprehension of interactions
+between theoretical principles (especially those of
+relational data model) and their practical use in modern
+databases.
+### Transferable skills
+Data storage in databases and their use are basic
+transferrable skills, useful in virtually all fields of
+computer science.
