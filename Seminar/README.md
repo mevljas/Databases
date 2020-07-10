@@ -5,10 +5,10 @@
 Travian is an online game developed by Travian Games GmbH. In 2006, Travian was the best
 an online game (played by more than 10,000 players) in the category of Germany’s best internet
 games. It is a tactical military game that takes place in real time. Along with two Englishmen
-versions and with original German, has been translated into more than 30 languages. Today he has over 3
+versions and with original German, has been translated into more than 30 languages. Today it has over 3
 millions of players around the world. It is made in the PHP programming language and for it
-we need an internet browser. It was the first game of its kind that could also be played over
-mobile phone. In Slovenia, it is currently played by around 1 0.000 players on eight servers
+we need an internet browser. It was the first game of its kind that could also be played over a
+mobile phone. In Slovenia, it is currently played by around 10.000 players on eight servers
 (maximum over 50,000).
 
 ### Players
@@ -20,17 +20,17 @@ there is also a hostile tribe of Natars and a more or less unfriendly nature.
 
 ### Playground
 
-The playing field comprises (x, y) coordinates from (- 25 0, - 25 0) to (25 0, 25 0). On each of the possible
+The playing field comprises (x, y) coordinates from (-250, -250) to (250, 250). On each of the possible
 coordinates may exist a settlement belonging to a particular player. The settlement can always be just on
 one coordinate, cannot extend across multiple fields.
 
 ### Alliance
 
-The game is designed for group play - players can trade, cities can be fortified with soldiers
-another player. We can form an alliance in the game. The sole purpose of this is to be able to get more players between
-unite against a common adversary. In an alliance, a player can see how many times they are attacked
-other members of the alliance. But there are also special communication tools. It can be in any alliance
-maximum 60 members. However, if the alliance is larger it can set up wings that can fight together
+The game is designed for group play - players can trade, cities can be fortified with soldiers from
+another player. We can form an alliance in the game. The sole purpose of this is to be able to get more players
+unite against a common adversary. In an alliance, a player can see how many times other members of the alliance are attacked. 
+But there are also special communication tools. In any alliance can be maximum 60 members. 
+However, if the alliance is larger, it can set up wings that can fight together against
 others (individual or alliances). Of course, they can also make alliances with each other,
 pacts and also wars.
 
@@ -44,24 +44,24 @@ named Xworld.sql.
 
 ### File description Xworld.sql
 
-The file contains the contents of the x_world table. Because the file was originally intended for MySQL, it
+File contains the contents of the x_world table. Because the file was originally intended for MySQL, it
 needs to be slightly corrected for more general use. The table contains data on
 individual settlements.
 
 The meaning of the x_world table attributes is as follows:
 
-1. id - Field code
-2. x - X coordinates (- 250, 250)
-3. y - Y coordinate (- 250, 250)
-4th tid - Tribe code:
+1. **id** - Field code
+2. **x** - X coordinates (-250, 250)
+3. **y** - Y coordinate (-250, 250)
+4. **tid** - Tribe code:
     a. 1 = Romans, 2 = Teutons, 3 = Gauls, 4 = Nature, 5 = Natars, 6 = Huns, 7 = Egyptians
-Type 5 - Settlement code
-6. village - Name of the settlement
-7. pid - Player code
-8. player - The name of the player
-9. aid - Alliance code (0 means the player is not in the alliance)
-10. alliance - The name of the alliance
-11. population - Number of inhabitants of the settlement.
+5. **vid** - Settlement code
+6. **village** - Name of the settlement
+7. **pid** - Player code
+8. **player** - The name of the player
+9. **aid** - Alliance code (0 means the player is not in a alliance)
+10. **alliance** - The name of the alliance
+11. **population** - Number of inhabitants.
 
 ### Using the x_world table (pb.fri.uni‐lj.si)
 
@@ -69,7 +69,7 @@ The table is ready on the server. All students can see and use it in the exercis
 USE exercises;
 DESCRIBE x_world;
 SELECT COUNT (*) FROM x_world;
-but
+or
 DESCRIBE exercises.x_world;
 SELECT COUNT (*) FROM exercises.x_world;
 
