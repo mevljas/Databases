@@ -131,40 +131,40 @@ Above the obtained tables from task 1 in SQL, write queries that will help you
 be able to answer the following questions. Each point from a) to j) is worth 3% of the total
 seminar assignments.
 
-`` `
-a) Print the code and name of the player with the largest settlement?
+```
+a) Print the code and name of the player with the largest settlement?  
 b) Which players have the most settlements? List their codes, names and number of settlements. Pri
-exclude Natars (pid = 1).
-c) How many settlements does each player have on average? (Excluding Natars)
+exclude Natars (pid = 1).  
+c) How many settlements does each player have on average? (Excluding Natars)  
 d) How many players has an above-average size settlement? (Again without consideration
-Natarjev)
+Natarjev)  
 e) Print data on all settlements of players without an alliance, in descending order of population,
-then along the x and y coordinates.
+then along the x and y coordinates.  
 f) List the codes and names of all alliances that end in a digit and contain at least one letter.
-Arrange the results in alphabetical order.
+Arrange the results in alphabetical order.  
 g) Write a function that returns the sum for the range defined by the parameters x, y and distance
 population of the area. The area is defined by a square (x-distance, y-distance),
 (x + distance, y + distance). Use the created function to print the sum of the values
 parameters (x = 0, y = 0, distance = 10), (x = 20, y = 20, distance = 5) and (x = 0, y = 0,
-distance = 500).
+distance = 500).  
 h) List the codes and names of players who have all their settlements in the area where x is between
-100 and 200 and y between 0 and 100.
+100 and 200 and y between 0 and 100.  
 i) Find the codes and names of players who have a dying settlement. For a dying settlement
 take those settlements that have less than 3% of the average player population (average
-player population is the total player population broken down by the number of its settlements).
+player population is the total player population broken down by the number of its settlements).  
 j) * The pitt player wants to rename all their settlements as follows. He will arrange them after
 population, the strongest will be “Terrier 00”, the next “Terrier 01” and so on. Task
-you can solve in several steps (sequence of queries).
-`` `
+you can solve in several steps (sequence of queries).  
+```
 ### 3. Order (DDL) (2 0%)
 
-`` `
+```
 a) Write a save procedure CreateAlliance (nameAlliance, pid), which creates a new alliance
 the name of the Alliance and the member with the code pid. The procedure must also check that the player
-with the code pid is not already in the second alliance.
+with the code pid is not already in the second alliance.  
 b) Write a transaction that will merge GM-H4N1TM and RS-H3N3TM alliance members into a new
-an alliance called VirusTM.
-`` `
+an alliance called VirusTM.  
+```
 
 ### 4. Order (ODBC) (20%)
 
@@ -174,16 +174,16 @@ Calculate the density in areas of size 10x10 fields according to the formulas:
 
 #### 퐺 표푠 푡표 푡푎 푝표 푝푢 푙푎 푐푖 푗푒 =
 
-`` `
+```
 푢푝 푢푝 푛푎 푝표 푝푢 푙푎 푐푖 푗푎 푛푎 표푏 푚표 č 푗푢
 100
-`` `
+```
 #### 퐺 표푠 푡표 푡푎 푎 푙푖 푎푛 푠푒 =
 
-`` `
+```
 푢푝 푢푝 푛푎 푝표 푝푢 푙푎 푐푖 푗푎 푖 푧푏 푟푎 푛푒 푎 푙푖 푎푛 푠푒 푛푎 표푏 푚표 č 푗푢
 100
-`` `
+```
 Save the calculated density results (for each of the 50x 50 = 25 00 ranges) in the appropriate one
 table densityPopulations and densityAlliance and write them back to the database. To calculate the density
 alliances you can choose any alliance. It is recommended to make a function that has an input
@@ -195,18 +195,18 @@ If you know, solve a), otherwise b). Point a) can bring you an extra bonus. Grap
 two-dimensional (higher point intensity means higher number) or three-dimensional (columnar).
 They should definitely be clear enough.
 
-`` `
+```
 a) * (Bonus additional 10% for demonstration) Write a GUI application in Python or Java,
 which is connected to the database and plots the results of the calculated density in the form of graphs
 settlement from the fourth task. As part of this task, you can also realize the entire fourth
-task, without storing intermediate results.
+task, without storing intermediate results.  
 b) Use Microsoft Excel to connect to the database and in the form of graphs
 plot the results of the calculated population density from the fourth task.
-`` `
+```
 ### Task 6 (Planning) (10%)
 
-`` `
-a) In what normal form is the table x_wolrd?
-b) In what normal form are the four created tables from Task 1.
-c) Draw a conceptual model of the database according to Task 1.
-`` `
+```
+a) In what normal form is the table x_wolrd?  
+b) In what normal form are the four created tables from Task 1.  
+c) Draw a conceptual model of the database according to Task 1.  
+```
