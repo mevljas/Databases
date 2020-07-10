@@ -116,10 +116,9 @@ settlement (vid, village, x, y, population, #pid) —village code, village name,
 coordinates, population, code of the village owner player
 
 The alliance table should NOT contain rows with the value aid = 0. Replace all in the player table
-values ​​of aid = 0 with missing value NULL. Also correct for all created tables
-specify primary and foreign keys.
+values of aid = 0 with missing value NULL. Also correctly specify primary and foreign keys.
 
-The values ​​of the keys and names of the tribes are: 1 = Romans, 2 = Teutons, 3 = Gauls, 4 = Nature, 5 = Natars, 6
+The values of the keys and names of the tribes are: 1 = Romans, 2 = Teutons, 3 = Gauls, 4 = Nature, 5 = Natars, 6
 = Huns, 7 = Egyptians
 
 ### When solving tasks from here on out use only tables from the first exercise and to the minimum extent required. Using the original x_world table is not allowed!
@@ -127,16 +126,15 @@ The values ​​of the keys and names of the tribes are: 1 = Romans, 2 = Teuton
 
 ### 2. Account (DML) (30%)
 
-Above the obtained tables from task 1 in SQL, write queries that will help you
+One the obtained tables from task 1 in SQL, write queries that will help you
 be able to answer the following questions. Each point from a) to j) is worth 3% of the total
 seminar assignments.
 
 ```
 a) Print the code and name of the player with the largest settlement?  
-b) Which players have the most settlements? List their codes, names and number of settlements. Pri
-exclude Natars (pid = 1).  
+b) Which players have the most settlements? List their codes, names and number of settlements. Exclude Natars (pid = 1).  
 c) How many settlements does each player have on average? (Excluding Natars)  
-d) How many players has an above-average size settlement? (Again without consideration
+d) How many players has an above-average size settlement? (Again without consideration of
 Natarjev)  
 e) Print data on all settlements of players without an alliance, in descending order of population,
 then along the x and y coordinates.  
@@ -156,47 +154,43 @@ j) * The pitt player wants to rename all their settlements as follows. He will a
 population, the strongest will be “Terrier 00”, the next “Terrier 01” and so on. Task
 you can solve in several steps (sequence of queries).  
 ```
-### 3. Order (DDL) (2 0%)
+### 3. Order (DDL) (20%)
 
 ```
-a) Write a save procedure CreateAlliance (nameAlliance, pid), which creates a new alliance
+a) Write a save procedure CreateAlliance (nameAlliance, pid), which creates a new alliance with
 the name of the Alliance and the member with the code pid. The procedure must also check that the player
 with the code pid is not already in the second alliance.  
-b) Write a transaction that will merge GM-H4N1TM and RS-H3N3TM alliance members into a new
-an alliance called VirusTM.  
+b) Write a transaction that will merge GM-H4N1TM and RS-H3N3TM alliance members into a new alliance called VirusTM.  
 ```
 
 ### 4. Order (ODBC) (20%)
 
 In Python or Java, write a program that connects to the database and
-for the entire playing field, it calculates the population density and the population density of a particular alliance.
+for the entire playing field calculates the population density and the population density of a particular alliance.
 Calculate the density in areas of size 10x10 fields according to the formulas:
 
-#### 퐺 표푠 푡표 푡푎 푝표 푝푢 푙푎 푐푖 푗푒 =
+
 
 ```
-푢푝 푢푝 푛푎 푝표 푝푢 푙푎 푐푖 푗푎 푛푎 표푏 푚표 č 푗푢
-100
+population density = total population in the area / 100
 ```
-#### 퐺 표푠 푡표 푡푎 푎 푙푖 푎푛 푠푒 =
 
 ```
-푢푝 푢푝 푛푎 푝표 푝푢 푙푎 푐푖 푗푎 푖 푧푏 푟푎 푛푒 푎 푙푖 푎푛 푠푒 푛푎 표푏 푚표 č 푗푢
-100
+alliance density = total population of the selected alliance in the area / 100
 ```
-Save the calculated density results (for each of the 50x 50 = 25 00 ranges) in the appropriate one
+Save the calculated density results (for each of the 50x 50 = 2500 ranges) in the appropriate 
 table densityPopulations and densityAlliance and write them back to the database. To calculate the density
-alliances you can choose any alliance. It is recommended to make a function that has an input
+of the alliances you can choose any alliance. It is recommended to make a function that has an input
 parameter alliance name.
 
 ### 5. Order (ODBC) (10%)
 
-If you know, solve a), otherwise b). Point a) can bring you an extra bonus. Graphs can be
+If you know how to, solve a), otherwise b). Point a) can bring you an extra bonus. Graphs can be
 two-dimensional (higher point intensity means higher number) or three-dimensional (columnar).
 They should definitely be clear enough.
 
 ```
-a) * (Bonus additional 10% for demonstration) Write a GUI application in Python or Java,
+a) * (**Bonus additional 10% for demonstration**) Write a GUI application in Python or Java,
 which is connected to the database and plots the results of the calculated density in the form of graphs
 settlement from the fourth task. As part of this task, you can also realize the entire fourth
 task, without storing intermediate results.  
@@ -206,7 +200,7 @@ plot the results of the calculated population density from the fourth task.
 ### Task 6 (Planning) (10%)
 
 ```
-a) In what normal form is the table x_wolrd?  
+a) In what normal form is the table x_world?  
 b) In what normal form are the four created tables from Task 1.  
 c) Draw a conceptual model of the database according to Task 1.  
 ```
