@@ -122,11 +122,7 @@ specify primary and foreign keys.
 The values ​​of the keys and names of the tribes are: 1 = Romans, 2 = Teutons, 3 = Gauls, 4 = Nature, 5 = Natars, 6
 = Huns, 7 = Egyptians
 
-### When solving tasks from here on out
-
-### tasks, and to the minimum extent required. Using the original
-
-### x_world table not allowed!
+### When solving tasks from here on out use only tables from the first exercise and to the minimum extent required. Using the original x_world table is not allowed!
 
 
 ### 2. Account (DML) (30%)
